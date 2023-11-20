@@ -1,0 +1,91 @@
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+html { 
+    width: auto;
+    height: auto;
+    max-height: 8rem;
+} 
+
+header {
+    background-color: #001F3F;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header img { 
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+} */
+
+header h2 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 5rem; 
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none
+}
+
+header a {
+    color: white;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+header #divBusca {
+    margin-right: 5rem;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+section {
+    display: flex;
+    margin-top: 5rem;
+}
+
+section .img img{
+    width: 730px;
+    margin-bottom: 20px;
+}
+
+section .img-column ul {
+    list-style: none;
+    display: block;
+    line-height: 3;
+}
+
+section .img-column img {
+    width: 200px;
+}
+
+section.Produtos {
+    margin-left: 2rem;
+}
+
+.header-bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 1px solid #001f3f35;
+    padding: 12px;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: black;
+}
