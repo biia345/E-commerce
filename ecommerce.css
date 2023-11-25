@@ -1,0 +1,379 @@
+html {
+    width: auto;
+    height: auto;
+    max-height: 8rem;
+}
+
+header {
+    background-color: #001F3F;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 5rem; 
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none
+}
+
+header a {
+    color: white;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+header #divBusca {
+    margin-right: 5rem;
+}
+
+section {
+    display: flex;
+}
+
+.header-bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 1px solid #001f3f35;
+    padding: 12px;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: black;
+}
+
+.carousel {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    width: 255%;
+}
+
+.carousel  {
+    height: auto;
+    margin-left:3rem;
+}
+
+.carousel img {
+    border-radius: 5px;
+}
+
+section.home-bottom {
+    margin-top: 4rem;
+}
+
+.card {
+    margin-left: 2.1rem;
+    max-width: 220px;
+}
+
+.cards {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+section .imagens ul {
+    margin-left: 0.5rem;
+}
+
+.imagens img {
+    max-width: 200px;
+}
+
+.imagens {
+    display: flex;
+    align-items: center;
+    margin-left: 2.6rem;
+}
+
+ .imagens ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ .text p {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+input#txtBusca {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+}
+
+button#btnBusca {
+    padding: 5px;
+    border-radius: 20px;
+}
+
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+
+
+
+
+
+
+section {
+    display: flex;
+    margin-top: 5rem;
+}
+
+section .text {
+    margin-left: 2rem;
+    font-weight: 600;
+}
+
+section .text p{
+    margin-top: 1rem;
+}
+
+section .comp {
+    display: flex;
+    gap: 2rem;
+}
+
+section .comp p {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+section .comp button {
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+section .comp button:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: transparent;
+}
+
+section .comp button:active{
+    border: none;
+    color: white;
+    background-color: green
+}
+
+section .img img{
+    width: 600px;
+    height: 340px;
+    margin-bottom: 20px;
+}
+
+.checked {
+    color: orange;
+  }
+
+section .img-column ul {
+    list-style: none;
+    display: block;
+    line-height: 3;
+}
+
+section .img-column li {
+    margin-top: 0;
+}
+
+section .img-column img {
+    margin-top: 2.7rem;
+    width: 150px;
+}
+
+section.Produtos {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.header-bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 1px solid #001f3f35;
+    padding: 12px;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: black;
+}
+
+input#txtBusca {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+button#btnBusca {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+html {
+    width: auto;
+    height: auto;
+    max-height: 8rem;
+}
+
+header {
+    background-color: #001F3F;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 5rem; 
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none
+}
+
+header a {
+    color: white;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+header #divBusca {
+    margin-right: 5rem;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+.header-bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 1px solid #001f3f35;
+    padding: 12px;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: black;
+}
+
+.form h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.form hr {
+    color:#86868b;
+    border: 2px solid;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+form {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 4%;
+    margin-left: 35%;
+}
+
+form input, form textarea {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background-color: #001F3F;
+    border: 0;
+    outline: 0;
+    padding: 15px 20px;
+    border-radius: 35px;
+    color: white;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+
+}
+
+form input::placeholder {
+    color: #86868b;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    font-weight: 700px;
+    color: white;
+    cursor: pointer;
+}
+
+form .btn-enviar input:hover {
+        box-shadow: 0px 0px 8px rgb(236, 166, 35);
+        transform: scale(1.1);
+        transition: 0.3s all;
+     }
+
+section button {
+    padding: 13px 25px;
+}
+
+section.btn {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+input#txtBusca {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+button#btnBusca {
+    padding: 8px;
+    border-radius: 20px;
+}
