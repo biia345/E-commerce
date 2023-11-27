@@ -116,12 +116,11 @@
       let total = 0;
 
       function adicionarAoCarrinho(idDoProduto) {
-          // Preços fictícios dos produtos
           const precos = {
               1: 55.90,
               2: 49.90,
               3: 45.90
-              // Adicione mais preços conforme necessário
+            
           };
 
           const produto = {
@@ -152,7 +151,6 @@
 
       function finalizarCompra() {
           alert(`Total: R$ ${total.toFixed(2)}\nObrigado por comprar conosco!`);
-          // Resetar carrinho após a compra
           itensDoCarrinho = [];
           total = 0;
           atualizarCarrinho();
