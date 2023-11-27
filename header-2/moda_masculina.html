@@ -15,9 +15,9 @@
     </div>
     <nav class="menu">
         <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="./ecommerce2.html" target="_blank"><li>Produtos</li></a>
-            <a href="./ecommerce3.html" target="_blank"><li>Contate-nos</li></a>
+            <a href="../ecommerce.html"><li>Home</li></a>
+            <a href="../produtos.html"><li>Produtos</li></a>
+            <a href="../fale-conosco.html" ><li>Contate-nos</li></a>
         </ul>
       </nav>
     <div id="divBusca">
@@ -27,15 +27,155 @@
 </header>
 <div class="header-bottom">
   <ul>
-    <a href="./header-2/moda_feminina.html"><li>Moda Praia Feminina</li></a>
-    <a href="./header-2/moda_masculina.html"><li>Moda Praia Masculina</li></a>
-    <a href="./header-2/acessorios.html"><li>Acessórios</li></a>
-    <a href="./header-2/itens_naúticos.html"><li>Itens Náuticos</li></a>
-    <a href="./header-2/equipamentos6.html"><li>Equipamentos de Praia</li></a>
+    <a href="./moda_feminina.html"><li>Moda Praia Feminina</li></a>
+    <a href="./moda_masculina.html"><li>Moda Praia Masculina</li></a>
+    <a href="./acessorios.html"><li>Acessórios</li></a>
+    <a href="./equipamentos6.html"><li>Equipamentos de Praia</li></a>
   </ul>
 </div>
 
-    
+
+
+<div class="titulo">
+  <h1>Produtos</h1>
+</div>
+<hr>
+
+  <div class="cards-container">
+      <div class="card" data-id="1">
+        <a href="../catalogo/homem1.html"> <img src="../imagens-ecommerce/homem1.avif" alt="Produto 1">
+          <p>Short água masculino regular de elástico liso bege | Pool</p>
+          <p>R$ 89,90</p> </a>
+          <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="card" data-id="2">
+          <a href="../catalogo/homem2.html"><img src="../imagens-ecommerce/homem2.avif" alt="Produto 2">
+          <p>Short água masculino praia amarelo | Pool</p>
+          <p>R$ 89,90</p> </a>
+          <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="card" data-id="2">
+       <a href="../catalogo/homem3.html"><img src="../imagens-ecommerce/homem3.avif" alt="Produto 2">
+        <p>Bermuda surf masculina folhagens multicor | Pool</p>
+        <p>R$ 89,90</p> </a> 
+        <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+  <!-- <div class="cards-container">
+    <div class="card" data-id="1">
+        <img src="../imagens-ecommerce/img a.jpeg" alt="Produto 1">
+        <p>Produto 1</p>
+        <p>R$ 10,00</p>
+        <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+        <img src="../imagens-ecommerce/img b.jpeg" alt="Produto 2">
+        <p>Produto 2</p>
+        <p>R$ 20,00</p>
+        <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+      <img src="../imagens-ecommerce/wallpaperflare.com_wallpaper.jpg" alt="Produto 2">
+      <p>Produto 3</p>
+      <p>R$ 20,00</p>
+      <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+  </div>
+</div>
+<div class="cards-container">
+  <div class="card" data-id="1">
+      <img src="../imagens-ecommerce/img a.jpeg" alt="Produto 1">
+      <p>Produto 1</p>
+      <p>R$ 10,00</p>
+      <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+  </div>
+  <div class="card" data-id="2">
+      <img src="../imagens-ecommerce/img b.jpeg" alt="Produto 2">
+      <p>Produto 2</p>
+      <p>R$ 20,00</p>
+      <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+  </div>
+  <div class="card" data-id="2">
+    <img src="../imagens-ecommerce/wallpaperflare.com_wallpaper.jpg" alt="Produto 2">
+    <p>Produto 3</p>
+    <p>R$ 20,00</p>
+    <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+</div>
+</div> -->
+
+<div class="container">
+  <div class="carrinho">
+    <div class="title">
+      <h2>Carrinho de Compras</h2>
+    </div>
+    <ul id="itens-do-carrinho"></ul>
+    <p>Total: R$ <span id="total-do-carrinho">0,00</span></p>
+    <button onclick="finalizarCompra()">Finalizar Compra</button>
+</div>
+</div>
+
+  <script>
+      let itensDoCarrinho = [];
+      let total = 0;
+
+      function adicionarAoCarrinho(idDoProduto) {
+          // Preços fictícios dos produtos
+          const precos = {
+              1: 89.90,
+              2: 89.90,
+              3: 89.90
+              // Adicione mais preços conforme necessário
+          };
+
+          const produto = {
+              id: idDoProduto,
+              nome: `Produto ${idDoProduto}`,
+              preco: precos[idDoProduto]
+          };
+
+          itensDoCarrinho.push(produto);
+          total += produto.preco;
+
+          atualizarCarrinho();
+      }
+
+      function atualizarCarrinho() {
+          const listaDoCarrinho = document.getElementById('itens-do-carrinho');
+          const totalDoCarrinho = document.getElementById('total-do-carrinho');
+
+          listaDoCarrinho.innerHTML = '';
+          itensDoCarrinho.forEach(item => {
+              const itemDoCarrinho = document.createElement('li');
+              itemDoCarrinho.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+              listaDoCarrinho.appendChild(itemDoCarrinho);
+          });
+
+          totalDoCarrinho.textContent = total.toFixed(2);
+      }
+
+      function finalizarCompra() {
+          alert(`Total: R$ ${total.toFixed(2)}\nObrigado por comprar conosco!`);
+          // Resetar carrinho após a compra
+          itensDoCarrinho = [];
+          total = 0;
+          atualizarCarrinho();
+      }
+  </script>
+
+<footer>
+  <div class="linha-do-rodape">
+      <div class="coluna-do-rodape">
+          <a href="#">Email da Empresa: AcquaWave3@gmail.com.br </a>
+      </div>
+      |
+      <div class="coluna-do-rodape">
+          <a href="#">Telefone da Empresa: (21)2087-7180 </a>
+      </div>
+      |
+      <div class="coluna-do-rodape">
+          <a href="#">Intagram da empresa: @AcquaWave_shop </a>
+      </div>
+  </div>
+</footer>
 
 </body>
 </html>

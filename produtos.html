@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="ecommerce.css">
     <title>Produtos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
     
@@ -18,8 +17,8 @@
         <nav class="menu">
             <ul>
                 <a href="./ecommerce.html" ><li>Home</li></a>
-                <a href=""><li>Produtos</li></a>
-                <a href="./fale-conosco.html" target="_blank"><li>Contate-nos</li></a>
+                <a href="./produtos.html"><li>Produtos</li></a>
+                <a href="./fale-conosco.html" ><li>Contate-nos</li></a>
             </ul>
         </nav>
         <div id="divBusca">
@@ -28,55 +27,121 @@
           </div>
     </header>
     <div class="header-bottom">
-      <ul>
-        <a href="./header-2/moda_feminina.html"><li>Moda Praia Feminina</li></a>
-        <a href="./header-2/moda_masculina.html"><li>Moda Praia Masculina</li></a>
-        <a href="./header-2/acessorios.html"><li>Acessórios</li></a>
-        <a href="./header-2/itens_naúticos.html"><li>Itens Náuticos</li></a>
-        <a href="./header-2/equipamentos6.html"><li>Equipamentos de Praia</li></a>
-      </ul>
-    </div>
+        <ul>
+          <a href="./header-2/moda_feminina.html"><li>Moda Praia Feminina</li></a>
+          <a href="./header-2/moda_masculina.html"><li>Moda Praia Masculina</li></a>
+          <a href="./header-2/acessorios.html"><li>Acessórios</li></a>
+          <a href="./header-2/equipamentos6.html"><li>Equipamentos de Praia</li></a>
+        </ul>
+      </div>
+  
 
-    <section class="Produtos">
-        <div class="img">
-          <h2>titulo do produto aqui</h2>
-            <img src="./imagens-ecommerce/wallpaperflare.com_wallpaper.jpg" alt="">
-        </div>
-        <div class="img-column">
-            <ul>
-                <li>
-                  <img src="./imagens-ecommerce/img a.jpeg" alt="..." class="img-thumbnail">
-                </li>
-                <li>
-                  <img src="./imagens-ecommerce/img b.jpeg" alt="..." class="img-thumbnail">
-                </li>
-                <li>
-                 <img src="./imagens-ecommerce/wallpaperflare.com_wallpaper.jpg" alt="..." class="img-thumbnail">   
-                </li>
-              </ul>
-        </div>
-        <div class="text"> 
-          <h2>Lorem ipsum dolor, sit amet</h2>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numqua<br>m atque dolor 
-            quos possimus aut officia aliquid nisi. Temporibus, cum! Voluptates<br> deleniti 
-            assumenda, possimus rem debitis nesciunt odio dolorum itaque quam.<br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, enim <br>quae? Hic, delectus.
-          Praesentium velit voluptatum consequatur unde voluptatibus esse enim <br>ut dolore fuga non est, a recusandae quas tempore! <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt <br>cum molestias, est error rerum, illo magni sint aut sit <br>
-          quae reprehenderit ipsum in similique quasi a nisi nam quas? <br>
-        </p>
-        <div class="comp">
-          <p>R$19,98</p> <button class="comp">Comprar</button>
-        </div>
-        </div>  
-    </section>
+
+      <div class="cards-container">
+      <div class="card" data-id="1">
+        <a href="./catalogo/mulher1.html"> <img src="./imagens-ecommerce/mulher1.avif" alt="Produto 1">
+          <p>Biquíni calcinha com regulador vermelha | Dript</p>
+          <p>R$ 55,90</p> </a>
+          <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="card" data-id="2">
+          <a href="./catalogo/mulher2.html"><img src="./imagens-ecommerce/mulher2.avif" alt="Produto 2">
+          <p>Biquíni top plus size texturizado azul | Dript</p>
+          <p>R$ 49,90</p> </a>
+          <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="card" data-id="2">
+        <a href="./catalogo/mulher3.html"><img src="./imagens-ecommerce/mulher3.avif" alt="Produto 2">
+        <p>Produto 3</p>
+        <p>R$ 45,90</p> </a>
+        <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+  
+  <div class="cards-container">
+    <div class="card" data-id="1">
+      <a href="./catalogo/homem1.html"> <img src="./imagens-ecommerce/homem1.avif" alt="Produto 1">
+        <p>Short água masculino regular de elástico liso bege | Pool</p>
+        <p>R$ 89,90</p> </a>
+        <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+        <a href="./catalogo/homem2.html"><img src="./imagens-ecommerce/homem2.avif" alt="Produto 2">
+        <p>Short água masculino praia amarelo | Pool</p>
+        <p>R$ 89,90</p> </a>
+        <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+     <a href="./catalogo/homem3.html"><img src="./imagens-ecommerce/homem3.avif" alt="Produto 2">
+      <p>Bermuda surf masculina folhagens multicor | Pool</p>
+      <p>R$ 89,90</p> </a> 
+      <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+  </div>
+</div>
+
+<div class="cards-container">
+    <div class="card" data-id="1">
+      <a href="./catalogo/acess1.html"> <img src="./imagens-ecommerce/acess1.avif" alt="Produto 1">
+        <p>Chapéu feminino de praia com faixa azul | Accessori</p>
+        <p>R$ 49,90</p> </a>
+        <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+        <a href="./catalogo/acess2.html"><img src="./imagens-ecommerce/acess2.avif" alt="Produto 2">
+        <p>Bolsa de praia tote bege | Accessori </p>
+        <p>R$ 179,90</p> </a>
+        <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+      <a href="./catalogo/acess3.html"><img src="./imagens-ecommerce/acess3.avif" alt="Produto 2">
+      <p>Óculos de sol feminino hexagonal preto</p>
+      <p>R$ 39,90</p> </a>
+      <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+  </div>
+</div>
+
+<div class="cards-container">
+    <div class="card" data-id="1">
+      <a href="../catalogo/equip1.html"> <img src="./imagens-ecommerce/equip1.avif" alt="Produto 1">
+        <p>Kit Bola Vôlei de Praia Penalty Fun XXI + Bomba de Ar</p>
+        <p>R$ 114,90</p> </a>
+        <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+        <a href="../catalogo/equip2.html"><img src="./imagens-ecommerce/equip2.avif" alt="Produto 2">
+        <p>Mesa Portátil para Gelo e Bebidas Camping Praia Piscina PEL-ICE0 Pelegrin</p>
+        <p>R$ 694,84</p> </a>
+        <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+      <a href="../catalogo/equip3.html"><img src="./imagens-ecommerce/equip3.avif" alt="Produto 2">
+      <p>Kit Jogo de Frescobol Alma de Praia Bel Sports</p>
+      <p>R$ 95,64</p> </a>
+      <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+  </div>
+</div>
+
+ <div class="cards-container">
+    <div class="card" data-id="1">
+      <a href="./catalogo/cosmetic1.html"> <img src="./imagens-ecommerce/cometc1.avif" alt="Produto 1">
+        <p>Geleia Corporal Iluminadora Be(M)dita Praia Lola Cosmetics</p>
+        <p>R$ 49,90</p> </a>
+        <button onclick="adicionarAoCarrinho(1)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+        <a href="./catalogo/cosmetic2.html"><img src="./imagens-ecommerce/cometc3.avif" alt="Produto 2">
+        <p>Protetor solar facial antiacne FPS50 40ml | Nivea Sun</p>
+        <p>R$ 69,90</p> </a>
+        <button onclick="adicionarAoCarrinho(2)">Adicionar ao Carrinho</button>
+    </div>
+    <div class="card" data-id="2">
+      <a href="./catalogo/cosmetic3.html"><img src="./imagens-ecommerce/cometc2.webp" alt="Produto 2">
+      <p>Creme Protetor Be(M)dita Praia Lola Cosmetics 250g</p>
+      <p>R$ 49,90</p> </a>
+      <button onclick="adicionarAoCarrinho(3)">Adicionar ao Carrinho</button>
+  </div>
+</div> 
 
 </body>
 </html>
-
 

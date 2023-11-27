@@ -1,0 +1,180 @@
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+html {
+    width: auto;
+    height: auto;
+    max-height: 8rem;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #001F3F;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+    font-size: 2rem;
+    margin-left: 5rem; 
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none
+}
+
+header a {
+    color: white;
+    margin-left: 60px;
+    text-decoration: none;
+}
+
+header #divBusca {
+    margin-right: 5rem;
+}
+
+section {
+    display: flex;
+}
+
+.header-bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 1px solid #001f3f35;
+    padding: 12px;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    display: flex;
+    margin-top: 5rem;
+}
+
+section .text {
+    margin-top: 12%;
+    margin-left: 4rem;
+    font-weight: 600;
+}
+
+section .text p{
+    margin-top: 1rem;
+}
+
+section .comp {
+    display: flex;
+    gap: 2rem;
+}
+
+section .comp p {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+section .comp button {
+    padding:10px 6px;
+    margin-top: 12px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+section .comp button:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: transparent;
+}
+
+section .comp button:active{
+    border: none;
+    color: white;
+    background-color: green
+}
+
+section .img img{
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.checked {
+    color: orange;
+  }
+
+section .img-column ul {
+    list-style: none;
+    display: block;
+    line-height: 3;
+}
+
+section .img-column li {
+    margin-top: 0;
+}
+
+section .img-column img {
+    margin-top: 4.5rem;
+    width: 120px;
+}
+
+section.Produtos {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.header-bottom ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    border-bottom: 1px solid #001f3f35;
+    padding: 12px;
+}
+
+.header-bottom a{
+    text-decoration: none;
+    color: black;
+}
+
+input#txtBusca {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+button#btnBusca {
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.img {
+    margin-left: 8%;
+}
+
+header h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.carrinho button {
+    background-color: #001F3F;
+    color: white;
+}
