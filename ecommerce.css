@@ -748,3 +748,26 @@ body {
     margin-top: 5%;
     margin: 8;
 }
+
+footer {
+    background-color: #001F3F;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.linha-do-rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.coluna-do-rodape {
+    flex: 1;
+    text-align: center;
+}
+
+.coluna-do-rodape a {
+    color: #fff;
+    text-decoration: none;
+}
